@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+       <style>
+           .my_footer{
+    background-color:#b0aca0;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+.my_footer p {
+    padding-top:10px;
+    font-size:14px;
+    margin: 0;
+    text-align:center
+    }
+     </style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{{products.image.url}}" width="300" height="300"></td>
+    </div>
+     <div class="col-md-6">
+       <h2>{{products.name}}</h2>
+       <h4>{{products.description}}</h4>
+       <a href="{% url 'bank:home'%}" style="margin-left:20px">Home</a>
+    </div>
+
+  </div>
+</div>
+<div class="footer navbar-fixed-bottom my_footer">
+    <p class="text-center">&copy:Royal Bank Ltd. All rights reserved</p>
+</div>
+</body>
+</html>
+
+
+

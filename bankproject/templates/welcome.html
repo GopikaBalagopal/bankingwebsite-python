@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <style>
+
+       .my_footer{
+    background-color:#b0aca0;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+.my_footer p {
+    padding-top:10px;
+    font-size:14px;
+    margin: 0;
+    }
+    </style>
+    <!-- Add your head content here -->
+</head>
+<body>
+    <div style="font-size:25px; margin-left:180px; font-weight: bold;">
+        Welcome, {{ name }}! Your application is accepted ...
+    </div>
+    <!-- Display the success message if available -->
+    <!-- Add your other content here -->
+
+    <!-- Add a link to return to the home page -->
+    <div style="margin-left:180px;">
+        <a href="{% url 'bank:home' %}">Return to Home Page</a>
+    </div>
+
+<div class="footer navbar-fixed-bottom my_footer">
+    <p class="text-center">&copy:Royal Bank Ltd. All rights reserved</p>
+</div>
+</body>
+</html>

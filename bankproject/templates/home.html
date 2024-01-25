@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block metadescription %}
+    Welcome to Royal Bank Ltd.
+{% endblock %}
+
+{% block title %}
+    Royal Bank
+{% endblock %}
+{% block content %}
+<div class="container" >
+    <div style="padding-top:10px;padding-bottom:25px;padding-right:500px;">
+        <img class="my_image my_image_padding" src="{% static 'img/banner.png' %}" alt="Our Products" width="1270px" >
+    </div>
+</div>
+
+<div class="container" style="margin-left:90px">
+    <div class="row">
+
+        {% for i in product_list %}
+        <div class="card" style="width: 18rem; margin-left:70px; margin-top:35px">
+            <img class="card-img-top" src="{{i.image.url}}" width="150px" height="250px" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{i.name}}</h5>
+
+                <a href="{% url 'bank:about' i.id %}" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+<div class="container" style="padding-top:10px;padding-bottom:50px;" >
+    <div class="row">
+
+
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}

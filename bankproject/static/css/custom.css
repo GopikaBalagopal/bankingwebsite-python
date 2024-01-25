@@ -1,0 +1,18 @@
+body{
+    background-color:#FFC300;
+    font-family: 'Roboto', sans-serif;
+
+}
+.my_footer{
+    background-color:#b0aca0;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+.my_footer p {
+    padding-top:10px;
+    font-size:14px;
+    margin: 0;
+    }
